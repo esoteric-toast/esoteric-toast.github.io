@@ -2,142 +2,224 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>*:･ﾟ✧ my _ lil _ space ✧ﾟ･:*</title>
-</head>
-<body>
-
-    <!-- Everything else will go inside the body -->
-
-</body>
-</html>
+    <title>*:･ﾟ✧ spread the cheese ✧ﾟ･:*</title>
     <style>
-        /* Global rules for the whole page */
+        /* 2000s Grainy Background & Tiny Text Rules */
         body {
-            background-color: #e6eaf0;
-            /* Recreates a grainy horizontal screen line pattern */
+            background-color: #fff9e6; /* Pale cheese yellow */
+            /* Authentic micro horizontal scanline texture */
             background-image: repeating-linear-gradient(
                 0deg, 
-                rgba(0, 0, 0, 0.03) 0px, 
-                rgba(0, 0, 0, 0.03) 1px, 
+                rgba(0, 0, 0, 0.02) 0px, 
+                rgba(0, 0, 0, 0.02) 1px, 
                 transparent 1px, 
                 transparent 3px
             );
             font-family: "Tahoma", "Verdana", sans-serif;
-            font-size: 11px; /* The iconic tiny font size */
-            color: #555555;
+            font-size: 11px;
+            color: #5d461e;
             text-align: center;
-            cursor: crosshair; /* Changes mouse cursor to a vintage retro crosshair */
-            margin-top: 40px;
+            cursor: crosshair;
+            margin-top: 30px;
         }
 
-        /* Styling for links */
-        a {
-            color: #9966cc;
+        a, .nav-btn {
+            color: #d48806;
             text-decoration: none;
             font-weight: bold;
+            cursor: pointer;
+            background: none;
+            border: none;
+            font-family: inherit;
+            font-size: 11px;
+            padding: 2px 4px;
         }
-        a:hover {
+        a:hover, .nav-btn:hover {
             text-decoration: underline;
-            background-color: #ffe6ff; /* Highlight color on hover */
+            background-color: #fff1b8;
         }
-    </style>
-    <style>
-        /* (Place this right underneath your body styles from Step 2) */
-        
-        /* The main container box locked at a tiny 680px width */
+
+        /* Fixed-width 2000s web container box */
         #window-box {
-            width: 680px;
+            width: 700px;
             margin: 0 auto;
             background-color: #ffffff;
-            border: 1px solid #b5b5b5;
+            border: 1px solid #d4a359;
             padding: 2px;
-            box-shadow: 3px 3px 0px #cccccc; /* Retro, non-blurry flat shadow */
+            box-shadow: 4px 4px 0px #e6c280;
             text-align: left;
         }
 
-        /* The Winamp / Windows Media Player inspired top bar */
+        /* Media Player style header bar */
         .title-bar {
-            background: linear-gradient(90deg, #8a73b3, #cbbade);
-            color: #ffffff;
-            padding: 4px 8px;
+            background: linear-gradient(90deg, #ffc04d, #ffe3a3);
+            color: #5d461e;
+            padding: 5px 8px;
             font-weight: bold;
             font-size: 10px;
             letter-spacing: 1px;
+            border-bottom: 1px solid #d4a359;
         }
 
         .content {
             padding: 15px;
         }
 
-        /* The classic tiny scrolling text box */
-        .shoutbox {
-            background-color: #fcfbfd;
-            border: 1px dashed #b5b5b5;
-            padding: 8px;
-            height: 90px;
-            overflow-y: scroll;
-            font-size: 10px;
-            margin-top: 15px;
+        /* Top navigation menu layout */
+        .nav-bar {
+            background-color: #fffbe6;
+            border: 1px dashed #d4a359;
+            padding: 6px;
+            text-align: center;
+            margin-bottom: 15px;
         }
 
+        /* Style for interactive tabs */
+        .tab-content {
+            display: none;
+        }
+        .tab-content.active {
+            display: block;
+        }
+
+        /* Vintage input fields and forms */
+        input[type="email"], input[type="text"], textarea {
+            background-color: #fffdf7;
+            border: 1px solid #cca152;
+            font-family: "Tahoma", sans-serif;
+            font-size: 11px;
+            padding: 3px;
+            color: #5d461e;
+        }
+        
+        button.retro-btn {
+            background-color: #ffe599;
+            border: 1px solid #cca152;
+            font-family: "Tahoma", sans-serif;
+            font-size: 11px;
+            font-weight: bold;
+            color: #5d461e;
+            padding: 2px 8px;
+            cursor: pointer;
+            box-shadow: 1px 1px 0px #b88f3d;
+        }
+        button.retro-btn:active {
+            box-shadow: none;
+            transform: translate(1px, 1px);
+        }
+
+        /* Chatroom Log Styling */
+        .shoutbox {
+            background-color: #fffdf5;
+            border: 1px dashed #cca152;
+            padding: 8px;
+            height: 140px;
+            overflow-y: scroll;
+            font-size: 11px;
+            margin-bottom: 8px;
+        }
         .shout-entry {
-            border-bottom: 1px dotted #e0e0e0;
-            padding: 3px 0;
+            border-bottom: 1px dotted #eedfa1;
+            padding: 4px 0;
+            text-align: left;
+        }
+
+        /* Hard pixel container for graphics */
+        .graphic-container {
+            border: 1px solid #cca152;
+            background: #fffdf5;
+            padding: 10px;
+            text-align: center;
+            margin-bottom: 15px;
         }
     </style>
+</head>
+<body>
+
 <div id="window-box">
-    <div class="title-bar">★ WELCOME TO MY DIARY v1.0 // BEST VIEWED IN IE 6.0 ★</div>
+    <!-- Top Decorative Header Bar -->
+    <div class="title-bar">🧀 SPREAD THE CHEESE v1.2 // EST. 2006 // GLORY TO CHEESISM 🧀</div>
+    
     <div class="content">
-
-        <!-- Columns and content go here next -->
-
-    </div>
-</div>
-        <table width="100%" cellspacing="0" cellpadding="5">
-            <tr>
-                <!-- Left Sidebar Column -->
-                <td width="30%" valign="top" style="border-right: 1px dotted #cccccc; padding-right: 10px;">
-                    <div style="text-align: center; border: 1px solid #eee; padding: 5px; background: #fafafa;">
-                        <!-- Representation of a grainy 100x100 personal profile GIF -->
-                        <div style="width: 100px; height: 100px; background: #ddd; margin: 0 auto; display: flex; align-items: center; justify-content: center; font-size: 10px; color: #999; border: 1px dashed #aaa;">[ grainy_gif.gif ]</div>
-                        <br>
-                        <b>Name:</b> Chrissy<br>
-                        <b>Status:</b> 🎧 Bored...<br>
-                        <b>Mood:</b> tracking...
-                    </div>
-                    <br>
-                    <b>NAVIGATION</b><br>
-                    » <a href="#">journal</a><br>
-                    » <a href="#">tagboard</a><br>
-                    » <a href="#">pixels</a><br>
-                    » <a href="#">exit</a>
-                </td>
-
-                <!-- The Right Column will connect here next -->
-                <!-- Right Main Column -->
-                <td width="70%" valign="top" style="padding-left: 15px;">
-                    <div style="font-size: 14px; font-family: Georgia, serif; font-style: italic; color: #7b599a; border-bottom: 1px solid #b5b5b5; padding-bottom: 3px;">
-                        august 23, 2006 - midnight thoughts
-                    </div>
-                    <p>omg welcome to my new layout!! i finally figured out how to do CSS background patterns. please ignore the mess while i upload all my graphics.</p>
-                    <p>current music: <i>Three Days Grace - Animal I Have Become.mp3</i></p>
-                    
-                    <!-- Tiny Tagboard Widget -->
-                    <div class="shoutbox">
-                        <div class="shout-entry"><b>xo_skater_boy:</b> cool site add me back!</div>
-                        <div class="shout-entry"><b>glitterGurl99:</b> love the layout design! cute font!</div>
-                        <div class="shout-entry"><b>web_master:</b> your guestbook code is broken lol</div>
-                    </div>
-                </td>
-            </tr>
-        </table>
-        <!-- Tiny Web Badges Row -->
-        <div style="text-align: center; margin-top: 25px;">
-            <div style="font-size: 9px; color: #999; margin-bottom: 5px;">★ LINK EXCHANGE ★</div>
-            
-            <!-- Standardized 88x31px block layout buttons -->
-            <div style="display: inline-block; width: 88px; height: 31px; background: #8a73b3; color: white; font-size: 9px; line-height: 31px; text-align: center; font-weight: bold; margin: 2px; border: 1px solid #777;">WINAMP</div>
-            <div style="display: inline-block; width: 88px; height: 31px; background: #333; color: #0f0; font-size: 9px; line-height: 31px; text-align: center; font-weight: bold; margin: 2px; border: 1px solid #777;">HTML4_ONLY</div>
-            <div style="display: inline-block; width: 88px; height: 31px; background: #cc6699; color: white; font-size: 9px; line-height: 31px; text-align: center; font-weight: bold; margin: 2px; border: 1px solid #777;">IE_SUCKS</div>
+        <!-- Top Navigation Area -->
+        <div class="nav-bar">
+            <button class="nav-btn" onclick="switchTab('home')">[ home ]</button> |
+            <button class="nav-btn" onclick="switchTab('mod-apply')">[ apply for moderator ]</button> |
+            <button class="nav-btn" onclick="switchTab('chat')">[ cheese chat ]</button> |
+            <button class="nav-btn" onclick="switchTab('about')">[ what is this ]</button> |
+            <button class="nav-btn" onclick="switchTab('ascension')">[ cheese ascension ]</button>
         </div>
-Create intex.html
+
+        <!-- ================= HOME TAB ================= -->
+        <div id="home" class="tab-content active">
+            <table width="100%" cellspacing="0" cellpadding="0">
+                <tr>
+                    <!-- Left Column: Visual Assets requested -->
+                    <td width="40%" valign="top" style="padding-right: 15px; text-align: center;">
+                        <div class="graphic-container">
+                            <!-- Spinning Cheese representation using modern CSS fallback design -->
+                            <div style="font-size: 40px; animation: spin 4s linear infinite; display: inline-block; margin-bottom: 15px;">🧀</div>
+                            <div style="font-size: 9px; color: #a08040;">[ spinning_cheese.gif ]</div>
+                        </div>
+
+                        <div class="graphic-container">
+                            <!-- Center main cheese image display -->
+                            <div style="font-size: 75px; margin: 10px 0;">💛</div>
+                            <div style="font-weight: bold; font-size: 12px; color: #b07e2a;">OUR HOLY HOLEY FAITH</div>
+                        </div>
+                    </td>
+
+                    <!-- Right Column: Portal Updates & Email Sign-up -->
+                    <td width="60%" valign="top" style="border-left: 1px dotted #cca152; padding-left: 15px;">
+                        <div style="font-size: 14px; font-family: Georgia, serif; font-style: italic; color: #b67d1b; border-bottom: 1px solid #cca152; padding-bottom: 3px; margin-bottom: 8px;">
+                            latest curd updates...
+                        </div>
+                        <p>Welcome to <b>Spread The Cheese</b>! This site is dedicated to the ultimate dairy grid network. Navigate using the top pixel buttons to join our collective.</p>
+                        
+                        <!-- Email Newsletter Sign-up Box -->
+                        <div style="background: #fffdf5; border: 1px solid #eedfa1; padding: 10px; margin-top: 20px;">
+                            <b style="color: #966611;">✧ JOIN THE CHEESE MAILING LIST ✧</b><br>
+                            <p style="font-size: 10px; margin: 4px 0 8px 0;">Get updates direct to your inbox whenever a new wedge drops.</p>
+                            <form onsubmit="alert('Thank you for giving your email to the cheese domain.'); this.reset(); return false;">
+                                <input type="email" placeholder="yourname@aol.com" required style="width: 180px;">
+                                <button type="submit" class="retro-btn">Sign Up!</button>
+                            </form>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <!-- ================= MODERATOR APPLICATION TAB ================= -->
+        <div id="mod-apply" class="tab-content">
+            <div style="font-size: 14px; font-family: Georgia, serif; font-style: italic; color: #b67d1b; border-bottom: 1px solid #cca152; padding-bottom: 3px; margin-bottom: 10px;">
+                apply for site moderator status
+            </div>
+            <p>We need strong, unyielding warriors to clear our boards of uncultured behavior. Fill out this screening form thoroughly:</p>
+            <form onsubmit="alert('Your moderator application has been logged into the grid. Do not contact us, we will find you.'); this.reset(); switchTab('home'); return false;">
+                <p><b>1. What is your favorite class of dairy age?</b><br>
+                <input type="text" style="width: 90%;" placeholder="e.g., Sharp Cheddar, Aged Gouda..." required></p>
+                
+                <p><b>2. Why do you deserve power over the Cheese Chat logs?</b><br>
+                <textarea style="width: 90%; height: 60px;" placeholder="Explain your loyalty here..." required></textarea></p>
+                
+                <button type="submit" class="retro-btn">Submit Application Form</button>
+            </form>
+        </div>
+
+        <!-- ================= CHEESE CHAT TAB (With Filters) ================= -->
+        <div id="chat" class="tab-content">
+            <div style="font-size: 14px; font-family: Georgia, serif; font-style: italic; color: #b67d1b; border-bottom: 1px solid #cca152; padding-bottom: 3px; margin-bottom: 10px;">
+                📡 live cheese chatroom v2.1
+            </div>
+            <p style="font-size: 10px; color: #a37c3f;">NOTICE: Automoderator script is active. Offensive, vulgar, or harmful mental health phrasing will trigger dynamic sanitation protocols.</p>
+            
+            <div class="shoutbox" id="chat-logs">
+                <div class="shout-entry"><b>swiss_miss99:</b> raw milk laws are getting out of hand imo</div>
+                <div class="shout-entry"><b>gouda_guy:</b> clean room in here today! text me back!</div>
+                <div class="shout-entry"><b>curd_burglar:</b> has anyone reached the maximum level of ascension yet?</div>
+            </div>
+
+            <form onsubmit="sendChatMessage(); return false;" id="chat-form">
+                <input type="text" id="chat-user" placeholder="Handle" style="width: 80px;" required> : 
+                <input type="text" id="chat-msg" placeholder="Type chat message here..." style="width: 400px;" required>
